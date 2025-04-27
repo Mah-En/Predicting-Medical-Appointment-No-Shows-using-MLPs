@@ -79,7 +79,3 @@ Implementing and optimizing MLPs for the No-Shows dataset proved effective in pr
 - Research papers on Deep Learning Architectures
 - Tutorials on MLPs, Regularization, and Hyperparameter Optimization
 
----
-
-**Good Luck, Have Fun, Code a Lot, and Happy Nowruz!** 🌿🎉🥳
-
