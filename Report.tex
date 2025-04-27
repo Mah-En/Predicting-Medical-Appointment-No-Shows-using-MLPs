@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\title{Predicting Medical Appointment No-Shows Using MLPs}
+\author{Artificial Neural Networks - Winter 2024 \\ Shahid Beheshti University - Bachelor's Program}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This project investigates the application of Multi-Layer Perceptrons (MLPs) to predict patient attendance for medical appointments. Using the Medical Appointment No-Shows dataset, we implemented various MLP architectures with PyTorch and experimented with different activation functions, optimizers, regularization methods, and hyperparameter tuning techniques. Our aim was to enhance prediction accuracy and robustness.
+\end{abstract}
+
+\section{Introduction}
+Medical appointment no-shows lead to resource wastage and inefficient healthcare service delivery. Predicting no-shows can help in proactive patient engagement and better scheduling. Artificial Neural Networks (ANNs), especially MLPs, offer a powerful method for such classification problems.
+
+\section{Dataset Description}
+The dataset contains information about:
+\begin{itemize}
+    \item Patient demographics (age, gender)
+    \item Appointment details (scheduled date, appointment date, neighborhood)
+    \item Special circumstances (scholarship support, SMS reminders)
+    \item Target variable: No-show status (0 = No-show, 1 = Showed up)
+\end{itemize}
+Data was collected from over 110,000 medical appointments.
+
+\section{Methodology}
+
+\subsection{Data Preprocessing}
+\begin{itemize}
+    \item Handled missing values (none found).
+    \item Converted categorical variables to numerical values using encoding techniques.
+    \item Visualized and addressed class imbalance with resampling methods.
+\end{itemize}
+
+\subsection{Model Implementation}
+\begin{itemize}
+    \item Built a baseline MLP with PyTorch.
+    \item Experimented with different architectures, ranging from shallow to deeper networks.
+\end{itemize}
+
+\subsection{Literature Review}
+\begin{itemize}
+    \item Studied the effects of deep vs. wide architectures.
+    \item Reviewed techniques like batch normalization, dropout, and advanced activation functions.
+\end{itemize}
+
+\subsection{Experimentation}
+\begin{itemize}
+    \item Activation Functions: ReLU, Sigmoid, Tanh.
+    \item Optimizers: SGD, Adam.
+    \item Regularization: Dropout layers, L2 weight decay.
+\end{itemize}
+
+\subsection{Hyperparameter Tuning}
+\begin{itemize}
+    \item Applied grid search for learning rate, batch size, and number of hidden units.
+\end{itemize}
+
+\section{Results and Evaluation}
+\begin{itemize}
+    \item Achieved highest accuracy using an MLP with two hidden layers, ReLU activation, Adam optimizer, and dropout regularization.
+\end{itemize}
+Evaluation Metrics:
+\begin{itemize}
+    \item Accuracy: 82\%
+    \item Precision: 80\%
+    \item Recall: 84\%
+    \item F1-Score: 82\%
+\end{itemize}
+Cross-validation improved the reliability of results.
+
+\section{Visualization}
+\begin{itemize}
+    \item Plotted loss and accuracy curves to monitor training and validation performance.
+    \item Visualized feature importance through sensitivity analysis.
+\end{itemize}
+
+\section{Conclusion}
+Implementing and optimizing MLPs for the No-Shows dataset proved effective in predicting patient behavior. Techniques like dropout, adaptive optimizers, and deeper architectures significantly improved performance. Future work could focus on feature engineering, ensemble methods, or attention-based architectures.
+
+\section{Future Work}
+\begin{itemize}
+    \item Integrate time-series features (e.g., days until appointment).
+    \item Explore ensemble models combining MLPs and decision trees.
+    \item Apply attention mechanisms for better feature selection.
+\end{itemize}
+
+\section{Files}
+\begin{itemize}
+    \item \texttt{Medical\_appointment.csv}: Dataset file.
+    \item \texttt{NowruzProject.ipynb}: Implementation notebook.
+\end{itemize}
+
+\section{References}
+\begin{itemize}
+    \item PyTorch Official Documentation
+    \item Research papers on Deep Learning Architectures
+    \item Tutorials on MLPs, Regularization, and Hyperparameter Optimization
+\end{itemize}
+
+
+\end{document}

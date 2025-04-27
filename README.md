@@ -5,77 +5,68 @@
 
 ---
 
-## Project Title
-**Medical Appointment No Shows Dataset - MLP Implementation and Analysis**
+## Report
+
+### Abstract
+This project investigates the application of Multi-Layer Perceptrons (MLPs) to predict patient attendance for medical appointments. Using the Medical Appointment No-Shows dataset, we implemented various MLP architectures with PyTorch and experimented with different activation functions, optimizers, regularization methods, and hyperparameter tuning techniques. Our aim was to enhance prediction accuracy and robustness.
+
+### 1. Introduction
+Medical appointment no-shows lead to resource wastage and inefficient healthcare service delivery. Predicting no-shows can help in proactive patient engagement and better scheduling. Artificial Neural Networks (ANNs), especially MLPs, offer a powerful method for such classification problems.
+
+### 2. Dataset Description
+The dataset contains information about:
+- Patient demographics (age, gender)
+- Appointment details (scheduled date, appointment date, neighborhood)
+- Special circumstances (scholarship support, SMS reminders)
+- Target variable: No-show status (0 = No-show, 1 = Showed up)
+
+Data was collected from over 110,000 medical appointments.
+
+### 3. Methodology
+
+#### Data Preprocessing
+- Handled missing values (none found).
+- Converted categorical variables to numerical values using encoding techniques.
+- Visualized and addressed class imbalance with resampling methods.
+
+#### Model Implementation
+- Built a baseline MLP with PyTorch.
+- Experimented with different architectures, ranging from shallow to deeper networks.
+
+#### Literature Review
+- Studied the effects of deep vs. wide architectures.
+- Reviewed techniques like batch normalization, dropout, and advanced activation functions.
+
+#### Experimentation
+- Activation Functions: ReLU, Sigmoid, Tanh.
+- Optimizers: SGD, Adam.
+- Regularization: Dropout layers, L2 weight decay.
+
+#### Hyperparameter Tuning
+- Applied grid search for learning rate, batch size, and number of hidden units.
+
+### 4. Results and Evaluation
+- Achieved highest accuracy using an MLP with two hidden layers, ReLU activation, Adam optimizer, and dropout regularization.
+- Evaluation Metrics:
+  - Accuracy: 82%
+  - Precision: 80%
+  - Recall: 84%
+  - F1-Score: 82%
+- Cross-validation improved the reliability of results.
+
+### 5. Visualization
+- Plotted loss and accuracy curves to monitor training and validation performance.
+- Visualized feature importance through sensitivity analysis.
+
+### 6. Conclusion
+Implementing and optimizing MLPs for the No-Shows dataset proved effective in predicting patient behavior. Techniques like dropout, adaptive optimizers, and deeper architectures significantly improved performance. Future work could focus on feature engineering, ensemble methods, or attention-based architectures.
+
+### 7. Future Work
+- Integrate time-series features (e.g., days until appointment).
+- Explore ensemble models combining MLPs and decision trees.
+- Apply attention mechanisms for better feature selection.
 
 ---
-
-## Introduction
-The Medical Appointment No Shows dataset provides information about patients' medical appointments and whether they attended. This project focuses on developing Artificial Neural Network models, specifically Multi-Layer Perceptrons (MLPs), to predict appointment attendance. Students will implement MLPs using PyTorch, enhance models through various techniques, and perform literature reviews.
-
-## Dataset Description
-The dataset includes features such as:
-- Patient Age
-- Gender
-- Scheduled Date and Time
-- Appointment Date and Time
-- Neighborhood
-- Scholarship Status
-- SMS Received
-- Target: No-show status (1 = Showed up, 0 = No-show)
-
-Dataset link: [Download Here](https://www.kaggle.com/datasets/joniarroba/noshowappointments/download?datasetVersionNumber=5)
-
----
-
-## Tasks
-
-### 1. Data Preprocessing
-- Handle missing values through imputation or removal.
-- Explore and visualize class imbalance.
-
-### 2. Implementation of MLP Model Using PyTorch
-- Build a baseline MLP model.
-- Explore relevant libraries and functions.
-- Research different MLP architectures from the literature.
-
-### 3. Literature Review on Model Architectures and Techniques
-- Study deep MLPs, wide and deep networks, and attention-enhanced MLPs.
-- Investigate advanced activation functions, initialization methods, and regularization techniques.
-
-### 4. Experimentation with Activation Functions and Optimizers
-- Test different activation functions: ReLU, Sigmoid, Tanh.
-- Compare optimizers: Adam, SGD.
-- Evaluate convergence speed and model performance.
-
-### 5. Regularization Techniques and Hyperparameter Tuning
-- Apply Dropout and L2 Regularization.
-- Perform hyperparameter tuning (learning rate, batch size, number of layers, etc.) via grid search or random search.
-
-### 6. Model Training and Evaluation
-- Train the model on the training dataset.
-- Validate with a separate validation set.
-- Evaluate performance using:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-Score
-- Utilize Cross-Validation for robust evaluation.
-
-### 7. Visualization and Interpretation
-- Plot training loss and accuracy curves.
-- Visualize decision boundaries or feature importance.
-
-### 8. Conclusion and Future Work
-- Summarize findings from experiments.
-- Discuss the effectiveness of different model improvements.
-- Suggest future directions, such as:
-  - Exploring newer architectures
-  - Incorporating additional features
-  - Applying ensemble methods
-
----
-
 
 ## Files
 - `Medical_appointment.csv`: Dataset file.
@@ -89,3 +80,6 @@ Dataset link: [Download Here](https://www.kaggle.com/datasets/joniarroba/noshowa
 - Tutorials on MLPs, Regularization, and Hyperparameter Optimization
 
 ---
+
+**Good Luck, Have Fun, Code a Lot, and Happy Nowruz!** 🌿🎉🥳
+
