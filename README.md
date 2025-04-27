@@ -76,12 +76,6 @@ Dataset link: [Download Here](https://www.kaggle.com/datasets/joniarroba/noshowa
 
 ---
 
-## Final Notes
-- Have fun coding and exploring MLP architectures!
-- Always document experiments and insights.
-- Happy Nowruz! 🌿🎉🥳
-
----
 
 ## Files
 - `Medical_appointment.csv`: Dataset file.
@@ -95,6 +89,3 @@ Dataset link: [Download Here](https://www.kaggle.com/datasets/joniarroba/noshowa
 - Tutorials on MLPs, Regularization, and Hyperparameter Optimization
 
 ---
-
-**Good Luck, Have Fun, Code a Lot, and Happy Nowruz!** 🌿🎉🥳
-
